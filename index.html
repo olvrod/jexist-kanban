@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>[j’exist] par quoi? — Production Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>[j’exist] par quoi?</h1>
+  <p>Album Production Board</p>
+</header>
+
+<main id="board">
+  <div class="column" data-status="backlog">
+    <h2>Backlog</h2>
+    <div class="cards"></div>
+    <button onclick="addCard('backlog')">＋</button>
+  </div>
+
+  <div class="column" data-status="build">
+    <h2>Build</h2>
+    <div class="cards"></div>
+    <button onclick="addCard('build')">＋</button>
+  </div>
+
+  <div class="column" data-status="record">
+    <h2>Record</h2>
+    <div class="cards"></div>
+    <button onclick="addCard('record')">＋</button>
+  </div>
+
+  <div class="column" data-status="edit">
+    <h2>Edit</h2>
+    <div class="cards"></div>
+    <button onclick="addCard('edit')">＋</button>
+  </div>
+
+  <div class="column" data-status="mix">
+    <h2>Mix</h2>
+    <div class="cards"></div>
+    <button onclick="addCard('mix')">＋</button>
+  </div>
+
+  <div class="column" data-status="locked">
+    <h2>Locked</h2>
+    <div class="cards"></div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
